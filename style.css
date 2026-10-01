@@ -1,0 +1,332 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #FFF; 
+    color: #545454;
+}
+
+/*HEADER*/
+header {
+    width: 100%; 
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 7%;
+    background-color: #FFF;
+    border-bottom: 2px solid #004AAD;
+}
+
+/*LOGO*/
+.logo {
+    width: 120px;
+    height: auto;
+    align-items: center;
+}
+
+/*MENU*/
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #545454;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/*BOTON DEL HEADER*/
+.btn-header {
+    background-color: #FF751F;
+    color: white;
+
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background-color: #004AAD;
+}
+
+/*SECCION PRINCIPAL*/
+main {
+    min-height: 850px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+    
+    padding: 70px 7%;
+
+    background-color: #FFF;
+}
+
+/*PARTE IZQUIERDA*/
+.presentacion {
+    width: 48%;
+    padding-left: 20px;
+}
+
+/*LOGO GRANDE*/
+.logo-presentacion {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+/*TITULO*/
+
+
+.presentacion h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    color: #545454;
+    margin-bottom: 5px;
+}
+
+.presentacion h2 {
+    color: #FF751F;
+    font-size: 45px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/*TEXTO*/
+.presentacion p {
+    max-width: 500px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #545454;
+}
+
+/*BENEFICIOS*/
+.beneficios {
+    display: flex;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.beneficio span {
+    font-weight: bold;
+    color: #545454;
+}
+
+/*CIRCULITOS*/
+.icono {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 18px;
+}
+
+.icono.azul {
+    background-color: #004AAD;
+}
+
+.icono.naranja {
+    background-color: #FF751F;
+}
+
+.icono.gris {
+    background-color: #545454;
+}
+
+
+/*FORMULARIO*/
+.Preinscripcion {
+    width: 500px;
+    margin: 70px auto;
+    padding: 45px;
+    background-color: #FFF;
+    border-radius: 25px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+/*LINEA NARANJA*/
+.titulo-formulario::before {
+    content: "";
+    display: block;
+
+    width: 55px;
+    height: 5px;
+
+    background-color: #FF751F;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/*TITULO*/
+.titulo-formulario h1 {
+    font-size: 34px;
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+/*DESCRIPCION*/
+.titulo-formulario p {
+    color: #545454;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/*CAMPOS*/
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color:#545454
+}
+
+.campo label span {
+    color: #FF751F;
+}
+
+/*INPUTS*/
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 15px;
+    border: 1.5px solid #CCC;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #545454;
+    background-color: #FFF;
+    outline: none;
+    transition: 0.3s;
+}
+
+/*CUANDO HACES CLICK*/
+.campo input:focus,
+.campo select:focus {
+    border-color: #004AAD;
+    box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.10);   
+}
+
+/*PLACEHOLDER*/
+.campo input::placeholder {
+    color: #999;
+}
+
+/*TERMINOS*/
+.terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.terminos input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: #004AAD;
+}
+
+.terminos label {
+    font-size: 14px;
+    color: #545454;
+}
+
+/*BOTON ENVIAR*/
+.btn-enviar {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 14px;
+    background-color: #FF751F;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #004AAD;
+    transform: translateY(-2px);
+}
+
+/*SEGURIDAD*/
+.seguridad {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+}
+
+/*CELULAR*/
+@media (max-width: 900px) {
+
+    main {
+        flex-direction: column;
+        
+        padding: 50px 5%;
+
+        gap: 50px;
+    }
+    
+    .presentacion {
+        width: 100%;
+
+        text-align: center;
+
+        padding-left: 0;
+    }
+
+    .logo-presentacion {
+        width: 250px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .presentacion > p {
+        margin: auto;
+    }
+
+    .beneficios {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .Preinscripcion {
+        width: 90%;
+        max-width: 500px;
+    }
+}
