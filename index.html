@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preinscripcion</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/Cultura CO.png" class="logo">
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="talleres.html">Talleres</a>
+            <a href="Cronograma.html">Cronograma</a>
+            <a href="#">contacto</a>
+        </nav>
+
+        <a href="#" class="btn-header">Preinscripcion</a>
+    </header>
+
+    <main>
+        <section class="presentacion">
+            <img src="img/Cultura CO.png" class="logo-presentacion">
+
+            <h1>Tu próximo taller</h1>
+            <h2>empieza acá</h2>
+
+            <p>
+                Completa el formulario para iscribirte
+                a uno de nuestros talleres.
+            </p>
+
+            <div class="beneficios">
+                <div class="beneficio">
+                    <div class="icono azul">*</div>
+                    <span>Aprende</span>
+                </div>
+
+                <div class="beneficio">
+                    <div class="icono naranja">*</div>
+                    <span>Comparti</span>
+                </div>
+
+                <div class="beneficio">
+                    <div class="icono gris">*</div>
+                    <span>Crece</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Titulo-->
+        <section class="Preinscripcion">
+
+            <div class="titulo-formulario">
+
+                <h1>Preinscripcion</h1>
+
+                <p>Completa el formulario y asegura tu lugar
+                    en uno de nuestros talleres.
+                </p>
+            </div>
+
+            <form>
+
+                <div class="campo">
+                    <label for="nombre">Nombre y Apellido <span>*</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Maria Gomez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="dni">DNI <span>*</span></label>
+                    <input type="number" id="dni" name="dni" placeholder="Ej: 42123456" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Ej: ejemplo@gmail.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Telefono <span>*</span></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 2974123456" required>
+                </div>
+
+                <div class="campo">
+                    <label for="taller">Taller que te interesa <span>*</span></label>
+                    <select id="taller" name="taller" required>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="taller 1"> Arte</option>
+                        <option value="taller 2"> Musica</option>
+                        <option value="taller 3"> Danza</option>
+                        <option value="taller 4"> Costura</option>
+                        <option value="taller 5"> Teatro</option>
+                        <option value="taller 6"> Basquet</option>
+                        <option value="taller 7"> Ceramica</option>
+                        <option value="taller 8"> Fotografia</option>
+                        <option value="taller 9"> Dibujo</option>
+                    </select>
+                </div>
+
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">
+                        Acepto los términos y condiciones.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar inscripción →</button>
+
+                <p class="seguridad">
+                    Tus datos estan seguros. No compartimos tu informacion.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="preinscripcion.js"></script>
+
+</body>
+
+</html>
